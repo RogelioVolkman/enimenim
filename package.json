@@ -1,0 +1,42 @@
+{
+  "name": "enimenim",
+  "version": "1.0.0",
+  "description": "A tiny typescript library to convert between Bitcoin & Satoshis with precision.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "mocha -r @ts-tools/node \"test/**/*.test.ts\"",
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "keywords": [
+    "satoshi",
+    "tenetur"
+  ],
+  "author": "EdnaKuhic",
+  "license": "MIT",
+  "devDependencies": {
+    "@ts-tools/node": "^0.8.3",
+    "@types/big.js": "^4.0.5",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "big.js": "^5.2.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RogelioVolkman/enimenim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RogelioVolkman/enimenim.git/issues"
+  }
+}
